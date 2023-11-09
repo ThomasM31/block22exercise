@@ -10,6 +10,7 @@ public class Square extends Polygon {
 
     @Override
     public void paint(Graphics g){
+
         g.drawRect(centerPoint.x - 10, centerPoint.y - 10, 20, 20);
     }
 

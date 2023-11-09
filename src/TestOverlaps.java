@@ -35,11 +35,11 @@ public class TestOverlaps {
 
         Polygon polyTriangle = new Triangle(1,4);
 
-        square.overlaps(polyTriangle);          // ___.overlaps:___{} vs ___{}
-        triangle.overlaps(polyTriangle);        // ___.overlaps:___{} vs ___{}
-        polyTriangle.overlaps(triangle);        // ___.overlaps:___{} vs ___{}
-        polyTriangle.overlaps(polyTriangle);    // ___.overlaps:___{} vs ___{}
-        triangle.overlaps(triangle);            // ___.overlaps:___{} vs ___{}
+        square.overlaps(polyTriangle);          // Square.overlaps: Square{} vs Triangle{}
+        triangle.overlaps(polyTriangle);        // Triangle.overlaps: Triangle{} vs Triangle{}
+        polyTriangle.overlaps(triangle);        // Triangle.overlaps: Triangle{} vs Triangle{}
+        polyTriangle.overlaps(polyTriangle);    // Triangle.overlaps: Triangle{} vs Triangle{}
+        triangle.overlaps(triangle);            // Triangle.overlaps: Triangle{} vs Triangle{}
 
 
         // TODO: Step 4b: After you have uncommented the overloaded declaration and
@@ -47,11 +47,11 @@ public class TestOverlaps {
         //   as per step 4a, again predict the output of the five lines above.
         //   Then run the program and see if your predictions were correct.
         //   Can you still explain the outputs in terms of static and dynamic types?
-        // ___.overlaps:___{} vs ___{}
-        // ___.overlaps:___{} vs ___{}
-        // ___.overlaps:___{} vs ___{}
-        // ___.overlaps:___{} vs ___{}
-        // ___.overlaps:___{} vs ___{}
+        // Square.overlaps: Square{} vs Triangle{}
+        // Triangle.overlaps: Triangle{} vs Triangle{}
+        // Triangle.overlaps: Triangle{} vs Triangle{}
+        // Triangle.overlaps: Triangle{} vs Triangle{}
+        // Triangle2.overlaps: Triangle{} vs Triangle{}
 
     }//main
 

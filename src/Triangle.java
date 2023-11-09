@@ -17,16 +17,17 @@ public class Triangle extends Polygon {
 
      @Override
      public void overlaps(Polygon other) {
-         overlapsHelper("Triangle", this.toString(), other.toString());
+
+        overlapsHelper("Triangle", this.toString(), other.toString());
      }
 
 
     // TODO: Step 4a: Uncomment this overloaded method declaration.
-    /*
+
      public void overlaps(Triangle other) {
          overlapsHelper("Triangle2", this.toString(), other.toString());
      }
-    */
+
 
     @Override
     public void paint(Graphics g){
